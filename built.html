@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1110">
+  <meta name="description" content="Stage 2 Maruti Suzuki Baleno built gallery, custom exhaust, performance specs, and media captures.">
+  <title>Builts & Media | Hemungshew Borgohain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Continuous Masonry Collage Layout */
+    .built-collage {
+      column-count: 3;
+      column-gap: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 900px) {
+      .built-collage {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .built-collage {
+        column-count: 1;
+      }
+    }
+
+    .collage-card {
+      break-inside: avoid;
+      margin-bottom: 1.25rem;
+      border-radius: 10px;
+      overflow: hidden;
+      background: var(--bg-card, #121816);
+      border: 1px solid var(--border-color, rgba(255, 255, 255, 0.08));
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .collage-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(181, 244, 108, 0.4);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .collage-card img {
+      width: 100%;
+      height: auto; /* Natural aspect ratio preserves full image detail */
+      display: block;
+    }
+
+    .collage-meta {
+      padding: 0.85rem 1rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--text-muted, #8b9b94);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .spec-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .spec-pills span {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.8rem;
+      padding: 0.35rem 0.75rem;
+      background: rgba(181, 244, 108, 0.1);
+      color: #b5f46c;
+      border-radius: 4px;
+      border: 1px solid rgba(181, 244, 108, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Home">HB<span>_</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">☰</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Home</a><a class="nav-link" href="projects.html">Projects</a><a class="nav-link active" href="built.html">Built</a><a class="nav-link" href="about.html">About</a>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme"><span class="theme-icon">◐</span><span class="theme-label">Light</span></button>
+    </nav>
+  </header>
+
+  <main class="wrap page-main">
+    <section class="page-intro">
+      <p class="eyebrow">AUTOMOTIVE & PERFORMANCE</p>
+      <h1>The <span class="gradient-text">Built.</span></h1>
+      <p class="page-lead">Stage 2 modified 2023 Maruti Suzuki Baleno — custom exhaust, ECU mapping, stance, and dynamic captures.</p>
+      
+      <div class="spec-pills">
+        <span>STAGE 2 TUNED</span>
+        <span>CUSTOM EXHAUST</span>
+        <span>AFTERMARKET WHEELS</span>
+        <span>INSTA360 X3 RIGGED</span>
+      </div>
+    </section>
+    
+<!-- Main Spec Banner (Pitch Black Background) -->
+    <article class="project-card" style="margin-top: 2rem; background: #000000; border-color: rgba(255, 255, 255, 0.12);">
+      <div class="project-image" style="background: #000000;">
+        <img src="assets/CB9F7B52-0C21-4869-883A-0AD70C4A7409.PNG" alt="Stage 2 Baleno Spec Render">
+      </div>
+      <div class="project-info" style="background: #000000;">
+        <div class="project-meta">
+          <span>2023 MODEL</span>
+          <span>BLACKOUT EDITION</span>
+        </div>
+        <h2>Maruti Suzuki Baleno — Stage 2 Specs</h2>
+        <p class="project-location">Custom Exhaust · Performance Mapping · Aftermarket Wheels</p>
+        <p class="project-summary">
+          Engineered for performance and stance. Features a full custom exhaust system, custom-fitted aftermarket multi-spoke wheels, lowered profile, complete de-chrome blackout package, and dynamic rolling footage captured with an Insta360 X3 setup.
+        </p>
+      </div>
+    </article>
+
+    <!-- Full Build Collage -->
+    <h2 style="margin-top: 3rem; margin-bottom: 0.5rem;">Built Gallery</h2>
+    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">Stance, exhaust setup, and dynamic road captures.</p>
+
+    <div class="built-collage">
+
+      <!-- 1. Bamboo Grove Profile -->
+      <div class="collage-card">
+        <img src="assets/IMG_1241.jpeg" alt="Stage 2 Baleno side angle in bamboo grove">
+        <div class="collage-meta">
+          <span>SIDE PROFILE</span>
+          <span>BAMBOO GROVE</span>
+        </div>
+      </div>
+
+     
+        <!-- 6. Lakeside Scenic Drive -->
+      <div class="collage-card">
+        <img src="assets/IMG_0673.jpg" alt="Scenic lakeside view under tree shade">
+        <div class="collage-meta">
+          <span>LAKESIDE DRIVE</span>
+          <span>SCENIC SPOT</span>
+        </div>
+      </div>
+
+      <!-- 3. Low Front Forest Road Angle -->
+      <div class="collage-card">
+        <img src="assets/IMG_1234 2.jpeg" alt="Front low angle on forest road">
+        <div class="collage-meta">
+          <span>FRONT ANGLE</span>
+          <span>FOREST ROAD</span>
+        </div>
+      </div>
+
+      <!-- 4. Urban Street Stance
+      <div class="collage-card">
+        <img src="assets/IMG_7306.jpg" alt="Frontal view in urban street setting">
+        <div class="collage-meta">
+          <span>STANCE</span>
+          <span>BLACKOUT FRONT</span>
+        </div>
+      </div> -->
+
+      <!-- 5. Parked Fitment View -->
+      <div class="collage-card">
+        <img src="assets/IMG_0278.png" alt="Parked side-front angle view showing wheel fitment">
+        <div class="collage-meta">
+          <span>FITMENT</span>
+          <span>URBAN PARKED</span>
+        </div>
+      </div>
+
+       <!-- 2. Dual Exhaust Rear Profile -->
+         <div class="collage-card">
+        <img src="assets/IMG_1243.jpeg" alt="Rear view with custom dual exhaust tips">
+        <div class="collage-meta">
+          <span>DUAL EXHAUST</span>
+          <span>REAR PROFILE</span>
+        </div>
+      </div>
+
+
+      <!-- 7. Rural Pathway View -->
+      <div class="collage-card">
+        <img src="assets/IMG_7306.jpg" alt="Parked along cobblestone pathway under trees">
+        <div class="collage-meta">
+          <span>RURAL DRIVE</span>
+          <span>PAVED PATHWAY</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Video Links Section -->
+    <section style="margin-top: 4rem; margin-bottom: 2rem; padding-top: 2rem; border-top: 1px solid var(--border-color, rgba(255, 255, 255, 0.08));">
+      <h2 style="margin-bottom: 0.5rem;">Exhaust & Dynamic Footage</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">Click to open video clips in a new tab.</p>
+      
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+        <!-- Local MP4 Links -->
+        <a href="assets/slowhip2.MP4" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.25rem; background: var(--bg-card, #121816); border: 1px solid var(--border-color, rgba(255, 255, 255, 0.12)); border-radius: 8px; color: #b5f46c; font-family: 'DM Mono', monospace; font-size: 0.85rem; text-decoration: none; transition: background 0.2s ease, border-color 0.2s ease;">
+          <span>▶</span> (AK47🫪) ↗
+        </a>
+        <a href="assets/slowhip1.MP4" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.25rem; background: var(--bg-card, #121816); border: 1px solid var(--border-color, rgba(255, 255, 255, 0.12)); border-radius: 8px; color: #b5f46c; font-family: 'DM Mono', monospace; font-size: 0.85rem; text-decoration: none; transition: background 0.2s ease, border-color 0.2s ease;">
+          <span>▶</span> (Pops & Crackles) ↗
+        </a>
+
+        <!-- YouTube Links -->
+        <a href="https://youtube.com/shorts/XOsG94dz6dU?si=a-RpAi0HvpXAkrOf" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.25rem; background: var(--bg-card, #121816); border: 1px solid var(--border-color, rgba(255, 255, 255, 0.12)); border-radius: 8px; color: #b5f46c; font-family: 'DM Mono', monospace; font-size: 0.85rem; text-decoration: none; transition: background 0.2s ease, border-color 0.2s ease;">
+          <span>▶</span> Tune Day ↗
+        </a>
+        <a href="https://youtube.com/shorts/HjiajpumoDo?si=hd88qeY3TW7XSif3" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.25rem; background: var(--bg-card, #121816); border: 1px solid var(--border-color, rgba(255, 255, 255, 0.12)); border-radius: 8px; color: #b5f46c; font-family: 'DM Mono', monospace; font-size: 0.85rem; text-decoration: none; transition: background 0.2s ease, border-color 0.2s ease;">
+          <span>▶</span> Insta360 shots ↗
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="index.html">HB<span>_</span></a>
+      <span>© <span data-current-year>2026</span> HEMUNGSHEW BORGOHAIN</span>
+      <a class="footer-link" href="https://github.com/hemungshewborgohain7777" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
